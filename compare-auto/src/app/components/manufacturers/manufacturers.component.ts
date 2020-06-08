@@ -41,7 +41,7 @@ export class ManufacturersComponent extends BaseComponent implements OnInit {
   }
 
   get filteredManufacturers() {
-    const filtered = this.manufacturers.filter(x => x.name.toLowerCase().includes(this.searchString));
+    const filtered = this.manufacturers.filter(x => x.name.toLowerCase().includes(this.searchString.toLowerCase()));
     const result = _.orderBy(filtered, 'name', this.sort);
     return result;
   }
