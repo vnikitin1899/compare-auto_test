@@ -1,0 +1,33 @@
+.accordion {
+    margin-top: 18px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__model {
+        font-weight: 500;
+        display: flex;
+        width: max-content;
+        margin: 18px 0;
+        font-size: 20px;
+        align-items: center;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: translateX(10px);
+        }
+    }
+
+    img {
+        height: 21px;
+        margin-right: 18px;
+    }
+
+    @media (max-width: 575px) {
+        .mat-expansion-panel-header-description {
+            display: none;
+        }
+    }
+}

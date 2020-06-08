@@ -1,0 +1,63 @@
+<div class="manufacturers__container">
+    <div class="panel">
+        <div>
+            {{ availableManufacturersCount - selectedManufacturersIds.length }} Manufacturers available
+        </div>
+        <button mat-raised-button color="primary" (click)="goNext()">SELECT MODEL</button>
+    </div>
+    <div class="manufacturers__options">
+        <mat-icon class="manufacturers__search-icon">search</mat-icon>
+        <mat-form-field class="manufacturers__input">
+            <input placeholder="Search" type="text" matInput [(ngModel)]="searchString">
+        </mat-form-field>
+        <mat-form-field class="manufacturers__order manufacturers__input">
+            <mat-label>Order by</mat-label>
+            <mat-select [(ngModel)]="sort" class="">
+                <mat-option value="asc">ASC</mat-option>
+                <mat-option value="desc">DESC</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <span>
+            <button mat-icon-button (click)="isList = false"
+                [ngClass]="{ 'active-mode': !isList, 'non-active-mode': isList }">
+                <mat-icon>apps</mat-icon>
+            </button>
+            <button mat-icon-button (click)="isList = true"
+                [ngClass]="{ 'active-mode': isList, 'non-active-mode': !isList }">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </span>
+    </div>
+    <div class="manufacturers__cards" *ngIf="!isList">
+        <div class="manufacturers__card-wrapper" *ngFor="let item of filteredManufacturers">
+            <mat-card [ngClass]="{'manufacturers__card--selected': isSelected(item.id)}"
+                (click)="selectManufacturer(item.id)" class="manufacturers__card">
+                <mat-card-content>
+                    <img [src]="item.logoSrc">
+                </mat-card-content>
+                <mat-card-title>{{ item.name }}</mat-card-title>
+                <div class="selection-indicator"></div>
+            </mat-card>
+        </div>
+    </div>
+    <table class="manufacturers__table table" *ngIf="isList">
+        <ng-container *ngFor="let item of filteredManufacturers">
+            <tr (click)="selectManufacturer(item.id)">
+                <td>
+                    <p class="selection-table-indicator"
+                        [ngStyle]="{'background': isSelected(item.id) ? '#FFE500' : 'white'}">
+                    </p>
+                </td>
+                <td class="manufacturers__table-content">
+                    <img [src]="item.logoSrc">
+                </td>
+                <td class="manufacturers__table-content">
+                    {{ item.name }}
+                </td>
+                <td class="manufacturers__table-content">
+                    {{ item.founded | date: 'MMMMM dd, yyyy' }}, {{ item.city }}, {{ item.country }}
+                </td>
+            </tr>
+        </ng-container>
+    </table>
+</div>

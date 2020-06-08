@@ -1,0 +1,68 @@
+$primary-color: #FFE500;
+$accent-color: #393939;
+
+$primary: (
+    50: $primary-color,
+    100: $primary-color,
+    200: $primary-color,
+    300: $primary-color,
+    400: $primary-color,
+    500: $primary-color,
+    600: $primary-color,
+    700: $primary-color,
+    800: $primary-color,
+    900: $primary-color,
+    A100: $primary-color,
+    A200: $primary-color,
+    A400: $primary-color,
+    A700: $primary-color,
+    contrast: (
+      50: $accent-color,
+      100: $accent-color,
+      200: $accent-color,
+      300: $accent-color,
+      400: $accent-color,
+      500: $accent-color,
+      600: $accent-color,
+      700: $accent-color,
+      800: $accent-color,
+      900: $accent-color,
+      A100: $accent-color,
+      A200: $accent-color,
+      A400: $accent-color,
+      A700: $accent-color,
+    )
+);
+
+$accent: (
+    50: $accent-color,
+    100: $accent-color,
+    200: $accent-color,
+    300: $accent-color,
+    400: $accent-color,
+    500: $accent-color,
+    600: $accent-color,
+    700: $accent-color,
+    800: $accent-color,
+    900: $accent-color,
+    A100: $accent-color,
+    A200: $accent-color,
+    A400: $accent-color,
+    A700: $accent-color,
+    contrast: (
+        50: white,
+        100: white,
+        200: white,
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: white,
+        A200: white,
+        A400: white,
+        A700: white,
+    )
+); 

@@ -1,0 +1,27 @@
+<div class="models__container">
+    <div class="panel">
+        <div>
+            {{ data.length }} Manufacturers selected {{ avaliableModelsCount }} Models available
+        </div>
+        <button mat-raised-button color="primary" (click)="goNext()">COMPARE</button>
+    </div>
+    <div class="accordion">
+        <mat-accordion multi>
+            <mat-expansion-panel *ngFor="let group of data" expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="accordion__title">
+                        <img [src]="group.logoSrc" alt="">
+                        {{ group.name }}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        {{ availableModelsCountForGroup(group.models) }} Models available {{ selectedCountInGroup(group.models) }} Models Selected
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div *ngFor="let item of group.models" class="accordion__model" (click)="selectModel(item, group)">
+                    <div class="selection-table-indicator" [ngStyle]="{'background': isSelected(item.id) ? '#FFE500' : 'white'}"></div>
+                    {{ item.name }}
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

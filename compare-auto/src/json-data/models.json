@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "logoSrc": "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png",
+        "name": "Tesla",        
+        "models": [
+            {
+                "id": 1,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 5,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 9,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d2/Jaguar_logo.svg/450px-Jaguar_logo.svg.png",
+        "name": "Jaguar",    
+        "models": [
+            {
+                "id": 2,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 6,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "logoSrc": "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white-grey.png",
+        "name": "BMW",
+        "models": [
+            {
+                "id": 3,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 4,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Opel-Logo-2011-Vector.svg/1200px-Opel-Logo-2011-Vector.svg.png",
+        "name": "Opel",
+        "models": [
+            {
+                "id": 11,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 12,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "logoSrc": "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png",
+        "name": "Tesla2",
+        "models": [
+            {
+                "id": 13,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 14,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d2/Jaguar_logo.svg/450px-Jaguar_logo.svg.png",
+        "name": "Jaguar2",
+        "models": [
+            {
+                "id": 23,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 24,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "logoSrc": "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white-grey.png",
+        "name": "BMW2",
+        "models": [
+            {
+                "id": 33,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 34,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Opel-Logo-2011-Vector.svg/1200px-Opel-Logo-2011-Vector.svg.png",
+        "name": "Opel2",
+        "models": [
+            {
+                "id": 43,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            },
+            {
+                "id": 44,
+                "name": "Model",
+                "msrp": "$0000000000",
+                "engine": "some engine info",
+                "drivetrain": "RWD",
+                "seats": "2-4"        
+            }
+        ]
+    }
+]

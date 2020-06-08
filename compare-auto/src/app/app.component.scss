@@ -1,0 +1,15 @@
+
+.app {
+    &__container {
+        max-width: 1366px;
+        margin: auto;
+        padding-top: 50px;
+    } 
+    
+    &__title {
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "logoSrc": "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png",
+        "name": "Tesla",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 2,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d2/Jaguar_logo.svg/450px-Jaguar_logo.svg.png",
+        "name": "Jaguar",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 3,
+        "logoSrc": "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white-grey.png",
+        "name": "BMW",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 4,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Opel-Logo-2011-Vector.svg/1200px-Opel-Logo-2011-Vector.svg.png",
+        "name": "Opel",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 5,
+        "logoSrc": "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png",
+        "name": "Tesla2",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 6,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d2/Jaguar_logo.svg/450px-Jaguar_logo.svg.png",
+        "name": "Jaguar2",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 7,
+        "logoSrc": "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white-grey.png",
+        "name": "BMW2",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "id": 8,
+        "logoSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Opel-Logo-2011-Vector.svg/1200px-Opel-Logo-2011-Vector.svg.png",
+        "name": "Opel2",
+        "founded": "Mar 1, 1950",
+        "city": "London",
+        "country": "UK"
+    }
+]

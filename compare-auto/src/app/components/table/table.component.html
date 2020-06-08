@@ -1,0 +1,49 @@
+<div class="table-wrapper">
+    <table class="table">
+        <thead>
+            <tr>
+                <td colspan="2">
+                    Manufacturer
+                </td>
+                <td>
+                    Model
+                </td>
+                <td>
+                    MSRP
+                </td>
+                <td>
+                    Engine
+                </td>
+                <td>
+                    Drivetrain
+                </td>
+                <td>
+                    Seats
+                </td>
+            </tr>
+        </thead>
+        <tr *ngFor="let item of data">
+            <td>
+                <img [src]="item.logoSrc">
+            </td>
+            <td>
+                {{ item.manufacturer }}
+            </td>
+            <td>
+                {{ item.name }}
+            </td>
+            <td>
+                {{ item.msrp }}
+            </td>
+            <td>
+                {{ item.engine }}
+            </td>
+            <td>
+                {{ item.drivetrain }}
+            </td>
+            <td>
+                {{ item.seats }}
+            </td>
+        </tr>
+    </table>
+</div>

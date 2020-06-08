@@ -1,0 +1,17 @@
+<div class="app__container">
+  <h1 class="app__title">Compare wizard</h1>
+  <mat-horizontal-stepper (selectionChange)="onNavigate($event)" linear>
+    <mat-step [hasError]="!selectedManufacturersIds.length" [optional]="false">
+      <ng-template matStepLabel>SELECT MANUFACTURER</ng-template>
+      <app-manufacturers (next)="next()" (manufacturerSelected)="selectedManufacturersIds = $event"></app-manufacturers>
+    </mat-step>
+    <mat-step disabled>
+      <ng-template matStepLabel>SELECT MODEL</ng-template>
+      <app-models [data]="selectModelData" (next)="next()" (modelSelected)="selectedModels = $event"></app-models>
+    </mat-step>
+    <mat-step [editable]="false">
+      <ng-template matStepLabel>COMPARE</ng-template>
+      <app-table [data]="selectedModels"></app-table>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

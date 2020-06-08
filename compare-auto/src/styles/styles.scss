@@ -1,0 +1,87 @@
+@import "~@angular/material/theming";
+@import "./colors";
+
+@include mat-core();
+
+$compare-auto-primary: mat-palette($primary);
+$compare-auto-accent: mat-palette($accent, A200, A100, A400);
+
+$compare-auto-warn: mat-palette($mat-red);
+
+$compare-auto-theme: mat-light-theme($compare-auto-primary, $compare-auto-accent, $compare-auto-warn);
+
+@include angular-material-theme($compare-auto-theme);
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: $accent-color;
+}
+
+.mat-step-icon {
+    height: 44px !important;
+    width: 44px !important;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.panel {
+    border-bottom: 1px solid $accent-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    font-weight: 500;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.mat-step-header[ng-reflect-active="false"] .mat-step-icon {
+    color: white;
+}
+
+.selection-table-indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid $accent-color;
+    border-radius: 3px;
+    margin: auto 18px;
+    padding: 4px;
+}
+
+.table {
+    font-weight: 500;
+    margin: auto;
+    border-spacing: 0;
+
+    tr {
+        &:nth-child(even) {
+            background: #f5f5f5;
+        }
+        &:nth-child(odd) {
+            background: #fff;
+        }
+        height: 60px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    img {
+        height: 35px;
+    }
+}
+
+@media(max-width: 650px) {
+    .mat-step-label {
+        display: none !important;
+    }
+}
