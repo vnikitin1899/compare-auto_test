@@ -3,6 +3,7 @@ import { Model } from './../../models/model.model';
 import { BaseComponent } from './../base-component';
 import { ModelsGroup } from './../../models/models-group.model';
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-models',
@@ -10,12 +11,23 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./models.component.scss']
 })
 export class ModelsComponent extends BaseComponent implements OnInit {
-  @Input() data: ModelsGroup[] = [];
+  @Input()
+  get data(): ModelsGroup[] {
+    return this._data;
+  }
+  set data(data: ModelsGroup[]) {
+    if (!_.isEqual(data, this._data)) {
+      this.selectedModels = [];
+      this.modelSelected.emit([]);
+    }
+    this._data = data;
+  }
+
   @Output() next = new EventEmitter();
   @Output() modelSelected = new EventEmitter<Model[]>();
   maxSelectionCount = 10;
   selectedModels: ModelExtended[] = [];
-
+  private _data: ModelsGroup[];
   constructor() {
     super();
   }
